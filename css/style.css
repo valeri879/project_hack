@@ -130,6 +130,10 @@ header {
     text-align: left;
 }
 
+.forget-password:hover{
+    text-decoration: underline;
+}
+
 .main-section {
     background: #edf0f5;
 }

